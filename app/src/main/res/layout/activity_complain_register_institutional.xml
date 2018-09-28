@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a68ca"
+    tools:context="com.dialursearch.prosperous.ComplainRegisterInstitutionalActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Institutional Complain Register"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80sp"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="98sp"
+                android:text="NAME : "
+                />
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txt_name"
+                android:layout_alignBaseline="@+id/txt_name"
+                android:hint=" Enter name"
+                android:inputType="text"
+                android:textColorHint="#b3b3b3"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/txt_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_marginTop="50sp"
+                android:layout_below="@id/txt_name"
+                android:layout_marginLeft="30sp"
+                android:text="MOBILE NUMBER : "
+                />
+
+            <EditText
+                android:id="@+id/edit_mobile"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txt_mobile"
+                android:layout_alignBaseline="@+id/txt_mobile"
+                android:hint=" Enter mobile number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColorHint="#b3b3b3"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_mobile"
+                android:layout_marginTop="50sp"
+                android:layout_marginLeft="50sp"
+                android:layout_alignEnd="@+id/txt_mobile"
+                android:layout_alignRight="@+id/txt_mobile"
+                android:textColor="#ffffff"
+                android:text="EMAIL : "
+                />
+
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txt_email"
+                android:layout_alignBaseline="@+id/txt_email"
+                android:hint=" Enter email"
+                android:textColorHint="#b3b3b3"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/txt_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_email"
+                android:layout_marginTop="50sp"
+                android:layout_marginLeft="50sp"
+                android:layout_alignEnd="@+id/txt_mobile"
+                android:layout_alignRight="@+id/txt_mobile"
+                android:textColor="#ffffff"
+                android:text="ADDRESS : "/>
+
+            <EditText
+                android:id="@+id/edit_address"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txt_address"
+                android:layout_alignBaseline="@+id/txt_address"
+                android:hint=" Enter address"
+                android:textColorHint="#b3b3b3"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:id="@+id/txt_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_address"
+                android:layout_marginTop="50sp"
+                android:layout_marginLeft="50sp"
+                android:layout_alignEnd="@+id/txt_email"
+                android:layout_alignRight="@+id/txt_email"
+                android:textColor="#ffffff"
+                android:text="AREA : "
+                />
+
+            <Spinner
+                android:id="@+id/spinner_area"
+                style="@android:style/Widget.Material.Spinner.Underlined"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txt_area"
+                android:layout_alignBaseline="@+id/txt_area"
+                android:textColor="#ffffff"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/txt_institute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_area"
+                android:layout_marginTop="50sp"
+                android:layout_marginLeft="10sp"
+                android:textColor="#ffffff"
+                android:text="Institute/Industry Name : "
+                />
+
+            <EditText
+                android:id="@+id/edit_institute"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txt_institute"
+                android:layout_alignBaseline="@+id/txt_institute"
+                android:hint=" Enter here"
+                android:textColorHint="#b3b3b3"
+                android:textColor="#ffffff"/>
+
+            <Button
+                android:id="@+id/btn_complain_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_institute"
+                android:layout_marginTop="50sp"
+                android:layout_alignLeft="@+id/txt_area"
+                android:layout_marginLeft="50sp"
+                android:textColor="#ffffff"
+                android:background="#003871"
+                android:padding="10sp"
+                android:text="SUBMIT"
+                />
+
+            <Button
+                android:id="@+id/btn_complain_reset"
+                android:layout_width="wrap_content"
+                android:background="#003871"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/btn_complain_submit"
+                android:layout_toRightOf="@id/btn_complain_submit"
+                android:textColor="#ffffff"
+                android:padding="10sp"
+                android:layout_marginLeft="25sp"
+                android:text="RESET"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

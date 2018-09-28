@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dialursearch.prosperous.MainActivity"
+    android:background="#1a68ca">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo"
+        android:padding="15dp"/>
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogo"
+        android:layout_centerInParent="true"
+        android:text="TSR ADVANCEMENT LLP"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:background="#616161"
+        android:padding="10dp"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:id="@+id/btn_invoice"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_rate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25sp"
+        android:text="Print Invoice"
+        android:padding="15sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:textColor="#003871"/>
+
+    <Button
+        android:id="@+id/btn_rate"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_complain_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25sp"
+        android:text="Rate "
+        android:padding="15sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:textColor="#003871"/>
+
+    <Button
+        android:id="@+id/btn_complain_register"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_cus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25sp"
+        android:text="Register Complain"
+        android:padding="15sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:textColor="#003871"/>
+
+    <Button
+        android:id="@+id/btn_cus"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="25sp"
+        android:text="Customer Complain Booking"
+        android:padding="15sp"
+        android:layout_alignParentBottom="true"
+        android:textColor="#003871"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dialursearch.prosperous.AdminActivity">
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#827717"
+        android:elevation="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="ADMINISTRATOR"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/btn_centre"
+        android:background="#26c6da"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190sp"
+        android:text="Service Centre"
+        android:padding="15sp"/>
+
+    <Button
+        android:id="@+id/btn_attender"
+        android:background="#7b1fa2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_centre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25sp"
+        android:text="Service Attender"
+        android:padding="15sp"/>
+
+
+</RelativeLayout>

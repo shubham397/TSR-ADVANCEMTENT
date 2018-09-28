@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a68ca"
+    tools:context="com.dialursearch.prosperous.ComplainRegisterHomeActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complain Register Home"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15sp"/>
+
+    <Button
+        android:id="@+id/btn_complain_individual_registration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200sp"
+        android:textColor="#ffffff"
+        android:background="#003871"
+        android:padding="15sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:text="Individual Complain Registration"
+        />
+
+    <Button
+        android:id="@+id/btn_complain_institutional_registration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/btn_complain_individual_registration"
+        android:textColor="#ffffff"
+        android:padding="15sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:background="#003871"
+        android:text="Institutional Complain Registration"
+        />
+
+</RelativeLayout>

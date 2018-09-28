@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dialursearch.prosperous.ComplainBookingActivity"
+    android:background="#1a68ca">
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00867171"
+        android:elevation="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="CUSTOMER COMPLAIN BOOKING"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/head">
+
+         <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TableLayout
+                    android:id="@+id/table_layout"
+                    android:layout_width="400sp"
+                    android:layout_height="fill_parent"
+                    android:stretchColumns="*">
+
+                    <TableRow
+                        android:layout_width="0sp"
+                        android:layout_height="fill_parent">
+
+                        <TextView
+                            android:id="@+id/txt_invoiceNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:text="Complain No. : "
+                            android:textColor="#ffffff"
+                            android:layout_column="0"/>
+
+                        <TextView
+                            android:id="@+id/edit_invoiveNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Complain No."
+                            android:textSize="20sp"
+                            android:textColor="#ffffff"/>
+                    </TableRow>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="#ffffff" />
+
+                    <TableRow
+                        android:layout_width="0sp"
+                        android:layout_height="fill_parent">
+
+                        <TextView
+                            android:id="@+id/txt_invoiceDate"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Complain Date : "
+                            android:textColor="#ffffff"
+                            android:layout_column="0"/>
+
+                        <TextView
+                            android:id="@+id/edit_invoiceDate"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:textColor="#ffffff"
+                            android:layout_column="1"
+                            android:textSize="20sp"/>
+
+
+                    </TableRow>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="#ffffff" />
+
+                    <TableRow
+                        android:layout_width="0sp"
+                        android:layout_height="fill_parent">
+
+                        <TextView
+                            android:id="@+id/txt_manufacture"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Manufacture : "
+                            android:textColor="#ffffff"
+                            android:layout_column="0"/>
+
+                        <Spinner
+                            android:id="@+id/spinner_manufature"
+                            style="@android:style/Widget.Material.Spinner.Underlined"
+                            android:layout_width="wrap_content"
+                            android:layout_column="1"
+                            android:layout_weight="1"
+                            android:textColor="#ffffff"
+                            android:gravity="center_vertical" />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="#ffffff" />
+
+                    <TableRow
+                        android:layout_width="0sp"
+                        android:layout_height="fill_parent">
+
+                        <TextView
+                            android:id="@+id/txt_productName"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Product : "
+                            android:textColor="#ffffff"
+                            android:layout_column="0"/>
+
+                        <Spinner
+                            android:id="@+id/spinner_product"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="#ffffff" />
+
+                    <TableRow
+                        android:layout_width="0sp"
+                        android:layout_height="fill_parent">
+
+                        <TextView
+                            android:id="@+id/txt_productModel"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Model : "
+                            android:textColor="#ffffff"
+                            android:layout_column="0"/>
+
+                        <EditText
+                            android:id="@+id/edit_productModel"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_column="1"
+                            android:maxWidth="0sp"
+                            android:hint="Model"
+                            android:textColor="#ffffff"
+                            android:textSize="20sp" />
+
+                    </TableRow>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="#ffffff" />
+
+                    <TableRow
+                        android:layout_width="0sp"
+                        android:layout_height="fill_parent">
+
+                        <TextView
+                            android:id="@+id/txt_problem"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Problem : "
+                            android:textColor="#ffffff"
+                            android:layout_column="0"/>
+
+                        <Spinner
+                            android:id="@+id/spinner_problem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="#ffffff" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="#ffffff" />
+
+                    <TableRow
+                        android:layout_width="0sp"
+                        android:layout_height="fill_parent">
+
+                        <TextView
+                            android:id="@+id/txt_serviceRate"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Our Service Centre Rate : "
+                            android:textColor="#ffffff"
+                            android:layout_column="0"/>
+
+                        <TextView
+                            android:id="@+id/edit_serviceRate"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_column="1"
+                            android:editable="false"
+                            android:textColor="#ffffff"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="#ffffff" />
+
+                    <TableRow
+                        android:layout_width="0sp"
+                        android:layout_height="fill_parent">
+
+                        <TextView
+                            android:id="@+id/txt_customerName"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Customer Name : "
+                            android:textColor="#ffffff"
+                            android:layout_column="0"/>
+
+                        <EditText
+                            android:id="@+id/edit_customerName"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_column="1"
+                            android:editable="false"
+                            android:hint="Customer Name"
+                            android:textColor="#ffffff"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="#ffffff" />
+
+                    <TableRow
+                        android:layout_width="0sp"
+                        android:layout_height="fill_parent">
+
+                        <TextView
+                            android:id="@+id/txt_city"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="City : "
+                            android:textColor="#ffffff"
+                            android:layout_column="0"/>
+
+                        <EditText
+                            android:id="@+id/edit_city"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_column="1"
+                            android:editable="false"
+                            android:hint="City"
+                            android:textColor="#ffffff"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="#ffffff" />
+
+                    <TableRow
+                        android:layout_width="0sp"
+                        android:layout_height="fill_parent">
+
+                        <TextView
+                            android:id="@+id/txt_address"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Address : "
+                            android:textColor="#ffffff"
+                            android:layout_column="0"/>
+
+                        <EditText
+                            android:id="@+id/edit_address"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_column="1"
+                            android:editable="false"
+                            android:hint="Address"
+                            android:textColor="#ffffff"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="#ffffff" />
+
+                    <TableRow
+                        android:layout_width="0sp"
+                        android:layout_height="fill_parent">
+
+                        <TextView
+                            android:id="@+id/txt_pin"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Pin : "
+                            android:textColor="#ffffff"
+                            android:layout_column="0"/>
+
+                        <EditText
+                            android:id="@+id/edit_pin"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:maxLength="6"
+                            android:inputType="number"
+                            android:hint="Pin"
+                            android:textColor="#ffffff"
+                            android:layout_column="1"
+                            android:textSize="20sp"/>
+
+                    </TableRow>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="#ffffff" />
+
+                    <TableRow
+                        android:layout_width="0sp"
+                        android:layout_height="fill_parent">
+
+                        <TextView
+                            android:id="@+id/txt_customerNumber"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text="Customer Number : "
+                            android:textColor="#ffffff"
+                            android:layout_column="0"/>
+
+                        <EditText
+                            android:id="@+id/edit_customerNumber"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_column="1"
+                            android:editable="false"
+                            android:hint="Customer Number"
+                            android:textColor="#ffffff"
+                            android:textSize="20sp" />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="#ffffff" />
+
+                </TableLayout>
+
+             <Button
+                 android:id="@+id/btn_Reset"
+                 android:layout_width="100sp"
+                 android:layout_height="wrap_content"
+                 android:text="Reset"
+                 android:layout_column="0"
+                 android:background="#003871"
+                 android:textColor="#ffffff"
+                 android:layout_marginLeft="100sp"
+                 android:layout_below="@+id/table_layout"
+                 />
+
+             <Button
+                 android:id="@+id/btn_Submit"
+                 android:layout_width="100sp"
+                 android:layout_height="wrap_content"
+                 android:text="Submit"
+                 android:layout_column="1"
+                 android:background="#003871"
+                 android:textColor="#ffffff"
+                 android:layout_marginLeft="10sp"
+                 android:layout_marginRight="10sp"
+                 android:layout_below="@+id/table_layout"
+                 android:layout_toRightOf="@+id/btn_Reset"/>
+
+            </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
